@@ -44,7 +44,7 @@ img{max-width:100%;display:block}
 /* === Hero === */
 .hero {
   background: 
-    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
     url('images/hero-steel-fabrication.jpg');
 
   background-size: cover;
@@ -154,6 +154,44 @@ img{max-width:100%;display:block}
 /* === Gallery === */
 .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
 
+/* === Products Section === */
+
+.products-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1.5rem;
+  margin-top:2rem;
+}
+
+.product-category{
+  background:#fff;
+  border:1px solid var(--gray-100);
+  border-radius:var(--radius);
+  padding:2rem 1.5rem;
+  box-shadow:var(--shadow);
+}
+
+.product-category h3{
+  color:var(--blue);
+  margin-bottom:1rem;
+  font-size:1.15rem;
+}
+
+.product-category ul{
+  list-style:none;
+  padding:0;
+}
+
+.product-category li{
+  padding:.55rem 0;
+  border-bottom:1px solid var(--gray-100);
+  color:var(--gray-600);
+  font-size:.95rem;
+}
+
+.product-category li:last-child{
+  border-bottom:none;
+}
 /* === Placeholder images === */
 .placeholder-img{background:var(--gray-100);border:2px dashed var(--gray-400);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;color:var(--gray-400);font-size:.9rem;font-weight:600;min-height:200px;aspect-ratio:4/3}
 
